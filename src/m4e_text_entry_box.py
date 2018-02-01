@@ -28,7 +28,7 @@ from tkinter import ttk
 def main():
     root = tkinter.Tk()
 
-    frame1 = ttk.Frame(root, padding=10)
+    frame1 = ttk.Frame(root, padding=100)
     frame1.grid()
 
     my_entry_box = ttk.Entry(frame1)
@@ -52,7 +52,8 @@ def print_contents(entry_box):
     Type hints:
       :type entry_box: ttk.Entry
     """
-    contents_of_entry_box = entry_box.get()
+    contents_of_entry_box = int(entry_box.get())
+    contents_of_entry_box += 10
     print(contents_of_entry_box)
 
 ########################################################################

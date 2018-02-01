@@ -18,12 +18,11 @@ import random
 def main():
     root = tkinter.Tk()
 
-    frame1 = ttk.Frame(root, padding=10)
+    frame1 = ttk.Frame(root, padding=100)
     frame1.grid()
 
     print_stuff_button = ttk.Button(frame1, text='Print stuff')
-    print_stuff_button['command'] = (lambda:
-                                     do_stuff())
+    print_stuff_button['command'] = lambda: do_stuff()
     print_stuff_button.grid()
 
     root.mainloop()
